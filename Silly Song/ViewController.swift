@@ -40,12 +40,6 @@ func lyricsForName(fullName: String) -> String {
 }
 
 
-extension ViewController: UITextFieldDelegate {
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.resignFirstResponder()
-        return false
-    }
-}
 
 
 class ViewController: UIViewController {
@@ -76,3 +70,10 @@ class ViewController: UIViewController {
     }
 
 }
+extension ViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return false
+    }
+}
+
